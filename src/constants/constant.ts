@@ -21,8 +21,8 @@ export const coloresDisponibles = [
   { name: "Cian", color: "#5ffeff" },
   { name: "Azul", color: "#5f7fff" },
   { name: "Violeta", color: "#ad5fff" },
-  { name: "Rosa", color: "#ef5fff" },
-  { name: "Magenta", color: "#ff5fe5" },
+  { name: "Lima", color: "#d0ff63" },
+  { name: "Rosa", color: "#ff5f8b" },
   { name: "Verde claro", color: "#5fffae" },
   { name: "Naranja", color: "#ffa85f" },
 ];
