@@ -99,6 +99,7 @@ const Tabla = () => {
         <MostrarGanador
           ganador={ganador!}
           onClose={() => setMostrarGanador(false)}
+          color={ganador === "X" ? colorX : colorO}
         />
       )}
       {mostrarEmpate && (

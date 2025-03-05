@@ -1,15 +1,16 @@
 import React from "react";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
-
 interface MostrarGanadorProps {
   ganador: string;
   onClose: () => void;
+  color: string;
 }
 
 const MostrarGanador: React.FC<MostrarGanadorProps> = ({
   ganador,
   onClose,
+  color,
 }) => {
   const { width, height } = useWindowSize();
 
@@ -17,7 +18,7 @@ const MostrarGanador: React.FC<MostrarGanadorProps> = ({
     <div className="modal fade show d-block" tabIndex={-1} role="dialog" >
       <Confetti width={width} height={height} numberOfPieces={200} />
       <div className="modal-dialog modal-dialog-centered" >
-        <div className="modal-content" style={{backgroundColor: "#f6f6f6"}}>
+        <div className="modal-content" style={{backgroundColor: color}}>
           <div className="modal-header justify-content-center">
             <h5 style={{ fontFamily: "cursive" }} className="modal-title fs-4">
               🎉 ¡Tenemos un ganador! 🎉
