@@ -58,6 +58,7 @@ const SelectorColor: React.FC<SelectorColorProps> = ({
           onChange={(selected) => setColorX(selected?.value || "")}
           className="w-100 w-md-auto" // Ancho completo en móvil, automático en pantallas grandes
           classNamePrefix="react-select"
+          isSearchable={false}
           styles={{
             container: (provided) => ({
               ...provided,
@@ -93,6 +94,7 @@ const SelectorColor: React.FC<SelectorColorProps> = ({
           onChange={(selected) => setColorO(selected?.value || "")}
           className="w-100 w-md-auto" // Ancho completo en móvil, automático en pantallas grandes
           classNamePrefix="react-select"
+          isSearchable={false}
           styles={{
             container: (provided) => ({
               ...provided,
