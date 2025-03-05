@@ -5,7 +5,7 @@ interface MostrarTurnosProps {
 const MostrarTurnos: React.FC<MostrarTurnosProps> = ({ turno }) => {
   return (
     <div className="text-white">
-      <h3 style={{ fontFamily: "cursive" }}>
+      <h3 style={{ fontFamily: "Pacifico" }}>
         Turno de: <span style={{ fontFamily: "sans-serif" }} className="fs-1">{turno}</span>
       </h3>
     </div>

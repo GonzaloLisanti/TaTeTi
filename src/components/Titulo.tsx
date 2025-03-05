@@ -31,7 +31,7 @@ const Titulo = () => {
 
   return (
     <div>
-      <h1 style={{ fontFamily: "cursive" }} className="display-3 text-white">
+      <h1 style={{ fontFamily: "Pacifico" }} className="display-3 text-white">
         <span style={{ color: colores[0] }}>Ta</span>
         <span>-</span>
         <span style={{ color: colores[1] }}>Te</span>

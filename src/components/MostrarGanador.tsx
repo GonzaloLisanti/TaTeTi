@@ -20,12 +20,12 @@ const MostrarGanador: React.FC<MostrarGanadorProps> = ({
       <div className="modal-dialog modal-dialog-centered" >
         <div className="modal-content" style={{backgroundColor: color}}>
           <div className="modal-header justify-content-center">
-            <h5 style={{ fontFamily: "cursive" }} className="modal-title fs-4">
+            <h5 style={{ fontFamily: "Pacifico" }} className="modal-title fs-4">
               🎉 ¡Tenemos un ganador! 🎉
             </h5>
           </div>
           <div className="modal-body text-center">
-            <h2 style={{ fontFamily: "cursive" }} className="display-5">
+            <h2 style={{ fontFamily: "Pacifico" }} className="display-5">
               Ganador: {ganador}
             </h2>
           </div>

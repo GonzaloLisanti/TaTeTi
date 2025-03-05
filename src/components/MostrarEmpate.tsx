@@ -21,15 +21,15 @@ const MostrarEmpate: React.FC<MostrarEmpateProps> = ({
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content" style={{backgroundColor: "#f6f6f6"}}>
           <div className="modal-header justify-content-center">
-            <h5 style={{ fontFamily: "cursive" }} className="modal-title fs-4">
+            <h5 style={{ fontFamily: "Pacifico" }} className="modal-title fs-4">
               🎭 ¡Es un empate! 🎭
             </h5>
           </div>
           <div className="modal-body text-center">
-            <h2 style={{ fontFamily: "cursive" }} className="fs-1">
+            <h2 style={{ fontFamily: "Pacifico"}} className="fs-1">
               No hay un ganador.
             </h2>
-            <p style={{ fontFamily: "cursive" }} className="fs-5">
+            <p style={{ fontFamily: "Pacifico" }} className="fs-5">
               ¿Quieres reiniciar el juego?
             </p>
           </div>
