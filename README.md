@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+Aquí tienes un ejemplo de un `README.md` para tu proyecto de TaTeTi en React con TypeScript, que incluye una presentación general del proyecto y las dependencias que usas:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# TaTeTi - Juego de Tres en Línea
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**TaTeTi** es un juego clásico de **Tres en Línea** (también conocido como **Tic-Tac-Toe**) desarrollado con **React** y **TypeScript**. Este proyecto utiliza varias herramientas modernas, como **Bootstrap** para el estilo, efectos visuales llamativos con **React Confetti** y **react-tsparticles**, y una estructura de componentes modular que permite mantener un código limpio y fácil de mantener.
 
-## Expanding the ESLint configuration
+## Características del Proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Interactividad y Animaciones**: Cuando un jugador gana o cuando se produce un empate, se muestran animaciones de confeti (con **React Confetti**) o partículas flotantes, lo que hace que la experiencia de juego sea más dinámica y entretenida.
+- **Responsive Design**: Utiliza **Bootstrap** para asegurar que el juego se vea bien en cualquier dispositivo.
+- **Efectos de Partículas**: En el caso de empate, se usan **efectos de partículas** para dar un toque visual único al evento.
+- **Manejo de Estado**: El juego utiliza **React hooks** y **React context** para manejar el estado de las jugadas y determinar el ganador o el empate.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tecnologías y Dependencias
+
+Este proyecto fue creado con las siguientes tecnologías:
+
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript que agrega tipado estático.
+- **Bootstrap**: Framework de CSS para un diseño rápido y responsivo.
+- **React Confetti**: Biblioteca para agregar efectos de confeti al ganar el juego.
+- **React-tsparticles**: Usado para crear efectos de partículas en el fondo del juego, agregando un toque visual único durante el empate.
+- **React-Select**: Biblioteca para crear selectores de opción en el juego si es necesario para futuras expansiones.
+
+### Dependencias principales:
+
+```json
+"dependencies": {
+  "react": "^19.0.0",
+  "react-confetti": "^6.4.0",
+  "react-dom": "^19.0.0",
+  "react-select": "^5.10.1",
+  "react-tsparticles": "^2.12.0",
+  "react-use": "^17.6.0",
+  "tsparticles": "^2.12.0"
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Dependencias de desarrollo:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```json
+"devDependencies": {
+  "@eslint/js": "^9.21.0",
+  "@types/react": "^19.0.10",
+  "@types/react-dom": "^19.0.4",
+  "@vitejs/plugin-react-swc": "^3.8.0",
+  "eslint": "^9.21.0",
+  "eslint-plugin-react-hooks": "^5.1.0",
+  "eslint-plugin-react-refresh": "^0.4.19",
+  "globals": "^15.15.0",
+  "typescript": "~5.7.2",
+  "typescript-eslint": "^8.24.1",
+  "vite": "^6.2.0"
+}
 ```
+
+## Instalación
+
+Para instalar y ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/GonzaloLisanti/TaTeTi.git
+   ```
+
+2. Accede a la carpeta del proyecto:
+
+   ```bash
+   cd TaTeTi
+   ```
+
+3. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+4. Ejecuta el proyecto en modo de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Abre tu navegador y accede a `http://localhost:3000` para jugar.
+
+## Uso
+
+El juego comienza con un tablero vacío de 3x3, donde dos jugadores alternan para marcar su casilla con "X" o "O". El primer jugador en alinear tres de sus marcas en una fila, columna o diagonal gana. Si todos los espacios están llenos sin un ganador, se declara un empate.
+
+**Cuando el juego termine**:
+
+- Si un jugador gana, aparecerá un mensaje con confeti de celebraciones.
+- Si el juego termina en empate, se mostrará un mensaje de empate acompañado de efectos de partículas flotantes.
+
+## Contribuir
+
+Si deseas contribuir a este proyecto, no dudes en hacer un **fork** del repositorio, crear una rama con tus cambios y enviar un **pull request**. Estaré encantado de revisar tus aportes.
