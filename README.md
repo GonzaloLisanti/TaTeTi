@@ -90,7 +90,3 @@ El juego comienza con un tablero vacío de 3x3, donde dos jugadores alternan par
 
 - Si un jugador gana, aparecerá un mensaje con confeti de celebraciones.
 - Si el juego termina en empate, se mostrará un mensaje de empate acompañado de efectos de partículas flotantes.
-
-## Contribuir
-
-Si deseas contribuir a este proyecto, no dudes en hacer un **fork** del repositorio, crear una rama con tus cambios y enviar un **pull request**. Estaré encantado de revisar tus aportes.
