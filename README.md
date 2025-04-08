@@ -1,7 +1,3 @@
-Aquí tienes un ejemplo de un `README.md` para tu proyecto de TaTeTi en React con TypeScript, que incluye una presentación general del proyecto y las dependencias que usas:
-
----
-
 # TaTeTi - Juego de Tres en Línea
 
 **TaTeTi** es un juego clásico de **Tres en Línea** (también conocido como **Tic-Tac-Toe**) desarrollado con **React** y **TypeScript**. Este proyecto utiliza varias herramientas modernas, como **Bootstrap** para el estilo, efectos visuales llamativos con **React Confetti** y **react-tsparticles**, y una estructura de componentes modular que permite mantener un código limpio y fácil de mantener.
